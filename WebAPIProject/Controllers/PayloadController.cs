@@ -13,6 +13,7 @@ namespace WebAPIProject.Controllers
     {
         public PayloadService payloadService = new PayloadService();
 
+        [HttpPut]
         public HttpResponseMessage Put(DataModel model)
         {
             if (model != null)
