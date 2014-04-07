@@ -8,6 +8,7 @@ namespace WebAPIProject.Services
 {
     public class PayloadService
     {
+        //This method filters the payload to return data with drm = true and episode count > 0. 
         public ResponseModel FilterPayload(Payload[] payload)
         {
             ResponseModel responseModel = new ResponseModel();

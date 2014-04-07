@@ -13,6 +13,8 @@ namespace WebAPIProject.Controllers
     {
         public PayloadService payloadService = new PayloadService();
 
+        //This method captures the posted data and makes a service call that filters the payload and returns a response.
+        //If the posted data is null or invalid or if any other error has ocurred a response of Bad Request is sent.
         [HttpPost]
         public HttpResponseMessage Post(DataModel model)
         {
